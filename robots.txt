@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://toszk-hub.github.io/stallhold-glue/sitemap.xml
