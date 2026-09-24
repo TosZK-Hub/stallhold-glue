@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NSW stallholder permit &amp; COI tracker — waitlist</title>
+  <meta name="description" content="Track multi-council market permits and COI endorsements in one place. Admin tracking research only — not advice." />
+  <style>
+    :root { color-scheme: light; --ink:#1a1a1a; --muted:#555; --line:#ddd; --bg:#fafafa; --card:#fff; --accent:#0b5; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:var(--ink); background:var(--bg); line-height:1.55; }
+    main { max-width:40rem; margin:0 auto; padding:2rem 1.25rem 4rem; }
+    h1 { font-size:1.65rem; line-height:1.25; margin:0 0 .75rem; }
+    h2 { font-size:1.1rem; margin:2rem 0 .75rem; }
+    p, li { color:var(--ink); }
+    .sub { color:var(--muted); margin:0 0 1.5rem; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:1.25rem; margin:1.25rem 0; }
+    .warn { border-color:#c9a227; background:#fffbeb; }
+    ul { padding-left:1.2rem; }
+    label { display:block; font-weight:600; margin:.75rem 0 .35rem; }
+    input[type=email], textarea { width:100%; padding:.65rem .7rem; border:1px solid var(--line); border-radius:8px; font:inherit; }
+    button { margin-top:1rem; background:var(--ink); color:#fff; border:0; border-radius:8px; padding:.7rem 1.1rem; font:inherit; font-weight:600; cursor:pointer; }
+    button:hover { opacity:.9; }
+    footer { margin-top:2.5rem; font-size:.85rem; color:var(--muted); }
+    .note { font-size:.9rem; color:var(--muted); }
+    a { color:#064; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Track your NSW market permits and COI endorsements across councils — in one place.</h1>
+    <p class="sub">For stallholders juggling more than one LGA and more than one organiser upload. Not advice. Not an organiser tool.</p>
+
+    <h2>The problem</h2>
+    <p>If you sell food at markets across NSW, you often deal with <strong>separate council processes</strong> — different portals, different fees, different expiry rules (financial-year end in one place, twelve-month approvals in another, event-linked renewals elsewhere). On top of that, some councils ask to be named as an <strong>interested party</strong> on your certificate of currency, and every market organiser wants their own copy of insurance and approvals uploaded again.</p>
+    <p>Organiser portals help <strong>them</strong> chase your documents for that one market. They do not keep your <strong>multi-council calendar</strong> or remind you which council still needs to appear on the COI after a policy renewal. Spreadsheets and email folders are the usual workaround. That is the admin mess this waitlist is about — not how to cook safely, and not which licence you should hold.</p>
+
+    <div class="card warn">
+      <h2 style="margin-top:0">What it will NOT do</h2>
+      <ul>
+        <li>Not <strong>food-safety advice</strong> (no stall set-up, temperature, or Food Standards guidance).</li>
+        <li>Not <strong>which permit to get</strong> (no principal vs recognition, no “you need this licence”).</li>
+        <li>Not <strong>insurance advice</strong> (no limits, products, brokers, or endorsement wording to buy).</li>
+        <li>Not an <strong>organiser / market operating system</strong>.</li>
+        <li>Not <strong>legal advice</strong>.</li>
+      </ul>
+      <p class="note" style="margin-bottom:0">If you need those things, talk to your council, insurer/broker, or a qualified adviser — not this page.</p>
+    </div>
+
+    <h2>What it will do (planned)</h2>
+    <ul>
+      <li>Help you <strong>monitor renewals and expiries</strong> across the NSW LGAs and policies you already track.</li>
+      <li><strong>Remind you</strong> when a COI needs a named council (interested party) checked off — as a checklist of parties you recorded, not a recommendation of cover.</li>
+      <li>Help you <strong>track which organiser</strong> (and which council portal) got which upload after a renewal.</li>
+    </ul>
+    <p>Early version: calendar + checklists + reminders. Built for the stallholder, not the market operator.</p>
+
+    <div class="card" id="waitlist">
+      <h2 style="margin-top:0">Interested if we build the admin tracker?</h2>
+      <p>Leave your email. We will only use it to tell you when a free early version is ready, or to ask one short question about how you track permits today. No spam list. No cold calls from this form.</p>
+      <form id="wl" action="https://formsubmit.co/jessemhobbs@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="stallhold-glue waitlist signup" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="https://toszk-hub.github.io/stallhold-glue/thanks.html" />
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" />
+        <label for="workaround">How do you track multi-council permits / COI uploads today? (optional)</label>
+        <textarea id="workaround" name="workaround" rows="3" placeholder="Spreadsheet, email folder, memory…"></textarea>
+        <button type="submit">Join the waitlist</button>
+      </form>
+      <p class="note">We store your email only for this waitlist. No sale of addresses. Unsubscribe on request. A$0 research phase — no paid ads behind this page.</p>
+    </div>
+
+    <h2>FAQ</h2>
+    <p><strong>Is this for market organisers?</strong><br />No. This is for stallholders who work across multiple councils and organisers.</p>
+    <p><strong>Will it tell me which council permit I need?</strong><br />No. You decide that with the relevant council. We only help track dates and uploads you already know about.</p>
+    <p><strong>Will it tell me what insurance to buy?</strong><br />No. Your insurer or broker handles cover.</p>
+    <p><strong>Is FoodTrader enough?</strong><br />FoodTrader is Victoria’s state portal. NSW still runs per-council processes for many temporary and mobile food paths.</p>
+    <p><strong>Is there a product today?</strong><br />Not yet. This page measures whether enough stallholders care about the admin glue to justify building anything. No payment. No app download.</p>
+
+    <footer>
+      Australia-first · Admin tracking research · Not advice · Not affiliated with any council or insurer
+    </footer>
+  </main>
+</body>
+</html>
